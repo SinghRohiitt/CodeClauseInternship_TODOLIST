@@ -1,38 +1,45 @@
 body {
-    font-family: Arial;
+    font-family: sans-serif;
+    background: url(https://tse2.mm.bing.net/th?id=OIP.CX3TuCR3tfBFiUF8q89NXgHaEo&pid=Api&P=0&h=180) no-repeat center center/cover;
   }
   h2{
     font-weight: bold;
     font-size: 34px;
+    text-align: center;
     
   }
   
   .todo-list,
   .container {
+    
+    /* background-color: aqua; */
     display: grid;
     grid-template-columns: 200px 150px 100px;
     column-gap: 10px;
     row-gap: 10px;
     align-items: center;
+    justify-content: center;
   }
   
   .container {
     margin-bottom: 10px;
-    align-items: stretch;
+    align-items: center;
   }
-  
-  .name,
-  .due-date {
+
+    .name, .due-date{ 
     font-size: 15px;
     padding: 6px;
-  }
-  
+    display: flex;
+    justify-content: center;
+    }
   .add-button {
     background-color: green;
     color: white;
     border: none;
     font-size: 15px;
     cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   
   .delete-button {
